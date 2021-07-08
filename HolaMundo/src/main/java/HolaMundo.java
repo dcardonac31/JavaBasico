@@ -11,20 +11,13 @@
 public class HolaMundo {
 
     public static void main(String[] args) {
-
-        var usuario = "Juan";
-        var saludar = "Hola";
         
-        System.out.println(saludar + " " + usuario);
+        var saludosDesdeJava = "Hola desde Java";
+        System.out.println(saludosDesdeJava);
         
-        var i = 3;
-        var j = 5;
-        System.out.println(i + j);
-        
-        System.out.println(saludar + i + j);
-        
-        System.out.println(i + j + saludar);
-        
+        int _holaDesdeJava;
+        float $adios;
+        char adios;
 
     }
 }
