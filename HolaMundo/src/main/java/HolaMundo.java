@@ -5,24 +5,24 @@ public class HolaMundo {
 
     public static void main(String[] args) {
 
-        //boolean
-        System.out.println("True tipo boolean:" + Boolean.TRUE);
-        System.out.println("False tipo boolean:" + Boolean.FALSE);
+        //convertir un String a un tipo int
+        var edad = Integer.parseInt("20");
+        System.out.println("edad = " + edad);
         
-        boolean booleanVar = true;
+        double valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = "+ valorPI);
         
-        if(booleanVar){
-            System.out.println("El valor es verdadero");
-        }
-        else{
-            System.out.println("El valor es false");
-        }
+        char c = "hola".charAt(3);
+        System.out.println("c = " + c);
         
-        System.out.println("");
+        var scanner = new Scanner(System.in);
+        edad = Integer.parseInt(scanner.nextLine());
+        System.out.println("edad = " + edad);
         
-        var edad = 10;
-        var esAdulto = edad >= 18;
-        System.out.println("esAdulto: " + esAdulto);
+        char caracter = scanner.nextLine().charAt(0);
+        System.out.println("Caracter = " + caracter);
 
+        String edadTexto = String.valueOf(25F);
+        System.out.println("edadTexto = " + edadTexto);
     }
 }
