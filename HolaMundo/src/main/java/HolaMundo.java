@@ -1,32 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author david
- */
+import java.util.Scanner;
+
 public class HolaMundo {
 
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
         
-        var nombre = "Karla";
-        var apellido = "Esparza";
-        
-        System.out.println(nombre + " " + apellido);
-        System.out.println("Nueva linea: \n" + nombre);
-        System.out.println("Tabulador: \t" + nombre);
-        System.out.println("Retroceso: \b\b" + nombre);
-        System.out.println("Retorno de carro: \r" + nombre);
-        System.out.println("Retorno de carro:"+ System.lineSeparator() + nombre);
-        System.out.println("Comilla simple: \'" + nombre + "\'");
-        System.out.println("Comilla doble: \"" + nombre + "\"");  
-        
-        System.out.println("saludos");
-        System.out.print("adios");
-        System.out.println("nos vemos");
-        
+        System.out.println("Escribe nombre del usuario:");
+        var usuario = scanner.nextLine();
+        System.out.println("Usuario : " + usuario);
     }
 }
