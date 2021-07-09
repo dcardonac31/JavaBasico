@@ -5,21 +5,24 @@ public class HolaMundo {
 
     public static void main(String[] args) {
 
-        System.out.println("bits tipo char:" + Character.SIZE);
-        System.out.println("bytes tipo char:" + Character.BYTES);
-        System.out.println("valor minimo tipo char:" + Character.MIN_VALUE);
-        System.out.println("valor maximo tipo char:" + Character.MAX_VALUE);
+        //boolean
+        System.out.println("True tipo boolean:" + Boolean.TRUE);
+        System.out.println("False tipo boolean:" + Boolean.FALSE);
         
-        var varChar = '\u0021';
-        System.out.println("varChar = " + varChar);
-
-        char varCharDecimal = 33;
-        System.out.println("varCharDecimal = " + varCharDecimal);
+        boolean booleanVar = true;
         
-        var varCharSimbolo = '!';
-        System.out.println("varCharSimbolo = " + varCharSimbolo);
-
-        System.out.println("----------------------------");
+        if(booleanVar){
+            System.out.println("El valor es verdadero");
+        }
+        else{
+            System.out.println("El valor es false");
+        }
+        
+        System.out.println("");
+        
+        var edad = 10;
+        var esAdulto = edad >= 18;
+        System.out.println("esAdulto: " + esAdulto);
 
     }
 }
