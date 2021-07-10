@@ -5,24 +5,41 @@ public class HolaMundo {
 
     public static void main(String[] args) {
 
-        //convertir un String a un tipo int
-        var edad = Integer.parseInt("20");
-        System.out.println("edad = " + edad);
-        
-        double valorPI = Double.parseDouble("3.1416");
-        System.out.println("valorPI = "+ valorPI);
-        
-        char c = "hola".charAt(3);
-        System.out.println("c = " + c);
-        
         var scanner = new Scanner(System.in);
-        edad = Integer.parseInt(scanner.nextLine());
-        System.out.println("edad = " + edad);
+        int a = 3, b = 2;
         
-        char caracter = scanner.nextLine().charAt(0);
-        System.out.println("Caracter = " + caracter);
+        int resultado = a + b;
+        System.out.println("resultado = " + resultado);
+        
+        System.out.println("resultado = " + (a + b) );
+        
+        resultado = a - b;
+        System.out.println("resultado resta = " + resultado);
+        
+        System.out.println("resultado resta = " + (a - b));
+        
+        resultado = a * b;
+        System.out.println("resultado multiplicacion = " + resultado);
 
-        String edadTexto = String.valueOf(25F);
-        System.out.println("edadTexto = " + edadTexto);
+        var resultado2 = 3D / b;
+        System.out.println("resultado division = " + resultado2);
+        
+        resultado = a % b;
+        System.out.println("resultado modulo = " + resultado);
+        
+        resultado = a % 2;
+        System.out.println("resultado = " + resultado);
+
+        resultado = b % 2;
+        System.out.println("resultado = " + resultado);
+        
+        if(resultado == 0)
+            System.out.println("es numero par");
+        else
+            System.out.println("es numero impar");
+        
+        
+        
+
     }
 }
