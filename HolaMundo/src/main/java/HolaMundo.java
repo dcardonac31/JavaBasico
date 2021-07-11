@@ -8,10 +8,7 @@ public class HolaMundo {
         var scanner = new Scanner(System.in);
         
        var resultado = (3 > 2) ? true : false;
-        System.out.println("resultado = " + resultado);
-        
-
-        
-
+        System.out.println("resultado = " + resultado); 
+       
     }
 }
