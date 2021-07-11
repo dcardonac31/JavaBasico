@@ -7,39 +7,39 @@ public class HolaMundo {
 
         var scanner = new Scanner(System.in);
         
-        int a = 3;
-        int b = -a;
+        int a=3, b=3;
         
-        boolean c = true;
-        boolean d = !c;
+        boolean c = a == b;
+        System.out.println("c = "+ c);
+        
+        c= (a !=b);
+        System.out.println("c = " + c);
+
+        
+        String cadena = new String();
+        String cadena2 = new String();        
+        cadena = "hola";
+        cadena2 = "hola";
+        System.out.println(cadena.equals(cadena2));
+        
+        boolean d = a <= b;
         System.out.println("d = " + d);
         
-        //incremento
-        //preincremento
-        int e = 3;
-        int f = ++e;
-        System.out.println("e = " + e);
-        System.out.println("f = " + f);
+        if(b % 2 == 0){
+            System.out.println("numero par");
+        }
+        else{
+            System.out.println("numero impar");
+        }
         
-        //postincremento
-        int g = 5;
-        int h = g++;
-        System.out.println("g = " + g);
-        System.out.println("h = " + h);
+        int edad = 8;
+        int adulto = 18;
+        if(edad >= adulto)
+            System.out.println("es un adulto");
+        else
+            System.out.println("es menor de edad");
         
-        
-        //decremento
-        //predecremento
-        int i=2;
-        int j = --i;
-        System.out.println("i = " + i);
-        System.out.println("j = " + j);
-        
-        //postdecremento
-        int k=4;
-        int l= k--;
-        System.out.println("k = " + k);
-        System.out.println("l = " + l);
+
         
 
     }
