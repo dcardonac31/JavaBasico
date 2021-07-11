@@ -6,22 +6,40 @@ public class HolaMundo {
     public static void main(String[] args) {
 
         var scanner = new Scanner(System.in);
-
-        int a = 3, b=2;
         
-        int c = a + 5 - b;
+        int a = 3;
+        int b = -a;
         
-        System.out.println("c = " + c);
+        boolean c = true;
+        boolean d = !c;
+        System.out.println("d = " + d);
         
-        a += 1; //a=a+1
-        System.out.println("a = " + a);
+        //incremento
+        //preincremento
+        int e = 3;
+        int f = ++e;
+        System.out.println("e = " + e);
+        System.out.println("f = " + f);
         
-        a += 3;//a=a+3
-        System.out.println("a = " + a);
+        //postincremento
+        int g = 5;
+        int h = g++;
+        System.out.println("g = " + g);
+        System.out.println("h = " + h);
         
-        b -= 1;//b=b-1
-        System.out.println("b = " + b);
         
+        //decremento
+        //predecremento
+        int i=2;
+        int j = --i;
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+        
+        //postdecremento
+        int k=4;
+        int l= k--;
+        System.out.println("k = " + k);
+        System.out.println("l = " + l);
         
 
     }
